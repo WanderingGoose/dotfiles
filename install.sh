@@ -21,15 +21,6 @@ start() {
     cd $HOME
 }
 
-install-fonts() {
-  mkdir -p ~/.fonts
-  cd ~/.fonts
-  echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
-  sh -c "$(wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip)"
-  unzip FiraCode.zip -d ~/.fonts
-  fc-cache -fv
-}
-
 setup-omz() {
     echo "==========================================================="
     echo "                      Shells Enviroment"
@@ -55,39 +46,6 @@ setup-omz() {
 
     setup-zsh
     install-starship
-}
-
-install-nodejs() {
-    install-volta() {
-      sh -c "$(curl -fsSL https://get.volta.sh)"  -- -y
-    }
-    install-node() {
-        echo "-----------------------------------------------------------"
-        echo "* Installing Node 12 and 14"
-        echo "-----------------------------------------------------------"
-        volta install node@12
-        volta install node@14
-    }
-
-    install-yarn() {
-        volta install yarn@1
-    }
-
-    yarn-global-add() {
-        echo "-----------------------------------------------------------"
-        echo "* Yarn Global Add those packages:"
-        echo "-----------------------------------------------------------"
-        yarn global add nx@latest
-    }
-
-
-    echo "==========================================================="
-    echo "              Setting up NodeJS Environment"
-
-    install-volta
-    install-node
-    install-yarn
-    yarn-global-add
 }
 
 zshrc() {
@@ -124,7 +82,6 @@ finish() {
 }
 
 start
-install-fonts
 setup-omz
 install-nodejs
 zshrc
