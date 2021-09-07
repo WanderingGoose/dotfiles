@@ -21,6 +21,15 @@ start() {
     cd $HOME
 }
 
+install-fonts() {
+  mkdir -p ~/.fonts
+  cd ~/.fonts
+  echo "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
+  sh -c "$(wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip)"
+  unzip FiraCode.zip -d ~/.fonts
+  fc-cache -fv
+}
+
 setup-omz() {
     echo "==========================================================="
     echo "                      Shells Enviroment"
@@ -115,6 +124,7 @@ finish() {
 }
 
 start
+install-fonts
 setup-omz
 install-nodejs
 zshrc
