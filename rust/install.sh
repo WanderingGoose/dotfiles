@@ -10,7 +10,7 @@ if test ! $(which rustup)
 then
   echo "  Installing Rustup for you."
 
-  sh -c "$(curl --proto '=http' --tlsv1.2 -sSL https://sh.rustup.rs)"  -- -y
+  sh -c "$(curl --proto '=https' --tlsv1.2 -sSL https://sh.rustup.rs)"  -- -y
 
   echo " Rustup installed"
 else

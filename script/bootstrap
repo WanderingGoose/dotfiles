@@ -140,11 +140,6 @@ install_dotfiles () {
   done
 }
 
-change_shell () {
-  chsh -s $(which zsh) $USERNAME
-}
-
-change_shell
 setup_gitconfig
 install_dotfiles
 
