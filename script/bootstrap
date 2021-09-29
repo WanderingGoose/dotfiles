@@ -141,7 +141,7 @@ install_dotfiles () {
 }
 
 change_shell () {
-  chsh -s /usr/bin/zsh $USERNAME
+  chsh -s $(which zsh) $USERNAME
 }
 
 change_shell
