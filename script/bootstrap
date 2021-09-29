@@ -3,7 +3,8 @@
 # bootstrap installs things.
 
 cd "$(dirname "$0")/.."
-DOTFILES_ROOT=$(pwd -P)
+export DOTFILES_ROOT=$(pwd -P)
+export USERNAME=`whoami`
 
 set -e
 
@@ -128,6 +129,8 @@ link_file () {
 install_dotfiles () {
   info 'installing dotfiles'
 
+  ln -s $DOTFILES_ROOT "$HOME/.dotfiles"
+
   local overwrite_all=false backup_all=false skip_all=false
 
   for src in $(find -H "$DOTFILES_ROOT" -maxdepth 2 -name '*.symlink' -not -path '*.git*')
@@ -137,6 +140,11 @@ install_dotfiles () {
   done
 }
 
+change_shell () {
+  chsh -s /usr/bin/zsh $USERNAME
+}
+
+change_shell
 setup_gitconfig
 install_dotfiles
 
@@ -151,6 +159,8 @@ then
     fail "error installing dependencies"
   fi
 fi
+
+
 
 echo ''
 echo '  All installed!'

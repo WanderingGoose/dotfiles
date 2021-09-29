@@ -1,5 +1,6 @@
 # ALIASES #
 ###########
+alias cls='clear' # Good 'ol Clear Screen command
 
 ## NX ##
 alias baa="nx run-many --target=build --all"
