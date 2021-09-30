@@ -1,5 +1,9 @@
+#!/usr/bin/env bash
+
 install_volta () {
-    sh -c "$(curl -fsSL https://get.volta.sh)"  -- -y
+    curl https://get.volta.sh | bash
+
+    source ~/.zshrc
 }
 
 install_node () {
