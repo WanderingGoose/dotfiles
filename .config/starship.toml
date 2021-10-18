@@ -15,7 +15,7 @@ truncation_length = 15
 truncation_symbol = ""
 
 [git_status]
-conflicted = "🏳"
+conflicted = "🔴"
 ahead = "🏎💨"
 behind = "😰"
 diverged = "😵"
