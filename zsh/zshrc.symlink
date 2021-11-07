@@ -36,24 +36,16 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Activate zsh plugins
-# source ${ZSH/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source ${ZSH/custom}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # User configuration
 # all of our zsh files
 typeset -U config_files
-config_files=($DOTFILES_ROOT/**/*.zsh)
+config_files=(~/.dotfiles/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
 do
   source $file
 done
-
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
 
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
@@ -62,14 +54,5 @@ do
 done
 
 unset config_files
-
-# Better history
-# Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
 
 eval "$(starship init zsh)"
