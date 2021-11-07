@@ -125,7 +125,9 @@ link_file() {
 install_dotfiles() {
   info 'installing dotfiles'
 
-  ln -s $DOTFILES_ROOT "$HOME/.dotfiles"
+  if ! [ -d "$HOME/.dotfiles" ]; then
+    ln -s $DOTFILES_ROOT "$HOME/.dotfiles"
+  fi
 
   local overwrite_all=false backup_all=false skip_all=false
 
@@ -134,21 +136,21 @@ install_dotfiles() {
     link_file "$src" "$dst"
   done
 
-  sh -c "./install"
+  zsh -c "~/.dotfiles/script/install"
 }
 
 setup_gitconfig
 install_dotfiles
 
-# If we're on a Mac, let's install and setup homebrew.
-if [ "$(uname -s)" == "Darwin" ]; then
-  info "installing dependencies"
-  if source bin/dot | while read -r data; do info "$data"; done; then
-    success "dependencies installed"
-  else
-    fail "error installing dependencies"
-  fi
-fi
+# # If we're on a Mac, let's install and setup homebrew.
+# if [ "$(uname -s)" == "Darwin" ]; then
+#   info "installing dependencies"
+#   if source bin/dot | while read -r data; do info "$data"; done; then
+#     success "dependencies installed"
+#   else
+#     fail "error installing dependencies"
+#   fi
+# fi
 
 echo ''
 echo '  All installed!'
