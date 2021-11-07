@@ -10,6 +10,8 @@ alias lror-themes="cd ~/source/personal/letzroll-offroad-big-commerce-themes"
 alias fnw="cd ~/source/personal/fnw/fnw"
 alias fnw-code="cd ~./source/personal/fnw/fnw code ."
 alias bomb="nx serve buildomatic"
+alias cole="cd ~/source/personal/coleman"
+alias coler="cd ~/source/personal/coleman/rust/coleman"
 
 ### Open Source ###
 alias salam="cd ~/source/work/agile-master"
