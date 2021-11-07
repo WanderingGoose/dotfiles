@@ -134,7 +134,7 @@ install_dotfiles() {
     link_file "$src" "$dst"
   done
 
-  ./install
+  sh -c "./install"
 }
 
 setup_gitconfig
