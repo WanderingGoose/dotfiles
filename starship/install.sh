@@ -12,7 +12,7 @@ if test ! $(which starship); then
 
   sh -c "$(curl -fsSL https://starship.rs/install.sh)" -- -y
 
-  ln -s $DOTFILES_ROOT/.config/starship.toml $HOME/config/starship.toml
+  ln -s $DOTFILES_ROOT/.config/starship.toml $HOME/.config/starship.toml
 
 else
   echo "    🚀 Starship already installed"
