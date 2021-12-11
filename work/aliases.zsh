@@ -1,5 +1,4 @@
-if [ -d "$PROJECTS/work/sapi" ]
-then
+if [ -d "$PROJECTS/work/salucro.react" ]; then
   ## Commands ##
   alias getallv4="cd ~/source/work && ./get-latest-all.sh"
 
