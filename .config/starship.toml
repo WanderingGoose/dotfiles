@@ -26,7 +26,7 @@ behind = "😰 "
 diverged = "😵 "
 untracked = "🤷‍ "
 stashed = "📦 "
-modified = "📝 "
+modified = "✏️ "
 staged = '[++\($count\)](green)'
 renamed = "👅 "
 deleted = "🗑 "
@@ -41,7 +41,7 @@ style = "bold dimmed green"
 disabled = false
 
 [nodejs]
-symbol = "🤖 "
+symbol = "✨ "
 
 [rust]
 symbol = "⚙️ "
