@@ -35,18 +35,18 @@ echo "==========================================================="
 echo "              Setting up NodeJS Environment"
 echo "==========================================================="
 
-echo "  🌩️ Checking for Volta installation 🌩️"
+echo "  🌩️  Checking for Volta installation 🌩️"
 if test ! $(which volta); then
-    echo "    🌩️ Installing Volta for you."
+    echo "    🌩️  Installing Volta for you."
 
     install_volta
     install_node
     install_yarn
     yarn_global_add
 
-    echo "    🌩️ Volta, Node, and Yarn installed"
+    echo "    🌩️  Volta, Node, and Yarn installed"
 else
-    echo "    🌩️ Volta already installed"
+    echo "    🌩️  Volta already installed"
 fi
 
 echo ""
