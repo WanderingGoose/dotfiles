@@ -1,0 +1,227 @@
+---
+version: 1.0
+owners:
+  - Alec Whittington <alec@coleman.rs>
+project_groups:
+  - name: 3rd Party
+    projects:
+      - name: Coleman
+        display_name: coleman
+        repo_address: 'git@github.com:alecwhittington/coleman.git'
+        branch: develop
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
+        environment:
+          env_example_file: env-example
+          env_file_name: '.env.development.local'
+          overwrite_existing: false
+          replace:
+            - name: MY_VAR
+              value: 12345
+              type: numeric
+              generated: true
+            - name: MY_OTHER_VAR
+              value: 'my other var'
+              type: string
+              generated: true
+      - name: Rust by Example
+        display_name: rust by example
+        repo_address: 'https://github.com/rust-lang/rust-by-example'
+        branch: master
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: gitui
+        display_name: gitui
+        repo_address: 'https://github.com/extrawurst/gitui.git'
+        branch: master
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: Scrum Master Studio
+        display_name: scrum master studio
+        repo_address: 'git@github.com:fatninjaswork/scrum-master-studio.git'
+        branch: master
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+  - name: Work
+    projects:
+      - name: Agile Master
+        display_name: agile master
+        repo_address: 'git@bitbucket.org:salucro/agile-master.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: true
+          example_env_filename: '.env.example'
+          env_name: '.env.development.local'
+          env_root_dir: ''
+      - name: Salucro.Laradock
+        display_name: salucro.laradock
+        repo_address: 'git@bitbucket.org:salucro/salucro.laradock.git'
+        branch: master
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: true
+          example_env_filename: '.env-example'
+          env_name: '.env.development.local'
+          env_root_dir: ''
+      - name: Salucro.com
+        display_name: salucro.com
+        repo_address: 'git@bitbucket.org:salucro/salucro.com.git'
+        branch: live
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: SAL
+        display_name: SAL
+        repo_address: 'git@bitbucket.org:salucro/salucro.sal.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: Salucro.Payments
+        display_name: salucro.payments
+        repo_address: 'git@bitbucket.org:salucro/salucro.payments.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: true
+          example_env_filename: '.env.laradock'
+          env_name: '.env'
+          env_root_dir: ''
+      - name: Salucro.Receipt
+        display_name: salucro.receipt
+        repo_address: 'git@bitbucket.org:salucro/salucro.receipt.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: true
+          example_env_filename: '.env.laradock'
+          env_name: '.env'
+          env_root_dir: ''
+      - name: SAPI
+        display_name: SAPI
+        repo_address: 'git@bitbucket.org:salucro/sapi.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: true
+          example_env_filename: '.env.laradock'
+          env_name: '.env'
+          env_root_dir: ''
+      - name: Salucro.Migrations
+        display_name: salucro.migrations
+        repo_address: 'git@bitbucket.org:salucro/salucro.migrations.git'
+        branch: live
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: omnipay-worldpay
+        display_name: omnipay-worldpay
+        repo_address: 'git@bitbucket.org:salucro/omnipay-worldpay.git'
+        branch: master
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: omnipay-cardpointe
+        display_name: omnipay-cardpointe
+        repo_address: 'git@bitbucket.org:salucro/omnipay-cardpointe.git'
+        branch: master
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: PPv4
+        display_name: ppv4
+        repo_address: 'git@bitbucket.org:salucro/patient-portal-reactor.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: true
+          example_env_filename: '.env.development'
+          env_name: '.env.development.local'
+          env_root_dir: ''
+      - name: react-monorepo
+        display_name: react-monorepo
+        repo_address: 'git@bitbucket.org:salucro/react-monorepo.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: react-final-project
+        display_name: react-final-project
+        repo_address: 'git@bitbucket.org:salucro/react-final-project.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+      - name: salucro-react
+        display_name: salucro-react
+        repo_address: 'git@bitbucket.org:salucro/salucro-react.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: true
+          example_env_filename: '.env.example'
+          env_name: '.env.development.local'
+          env_root_dir: './salucro'
+      - name: fetg
+        display_name: fetg
+        repo_address: 'git@bitbucket.org:salucro/fetg.git'
+        branch: develop
+        git_email: awhittington@salucro.com
+        git_name: Alec Whittington
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
+projects: ~
