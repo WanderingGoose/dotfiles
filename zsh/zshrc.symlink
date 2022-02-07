@@ -18,7 +18,7 @@ fi
 plugins=(
 	alias-finder
   # brew
-	cargo
+	rust
 	common-aliases
 	copydir
 	git 

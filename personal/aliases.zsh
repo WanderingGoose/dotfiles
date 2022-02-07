@@ -2,16 +2,14 @@
 alias df="cd ~/source/personal/dotfiles"
 alias df-code="code ~/source/personal/dotfiles"
 
-### LROR ###
-alias lror="cd ~/source/personal/letzroll-offroad-website"
-alias lror-themes="cd ~/source/personal/letzroll-offroad-big-commerce-themes"
-
 ### Fat Ninja's Work ###
 alias fnw="cd ~/source/personal/fnw/fnw"
-alias fnw-code="cd ~./source/personal/fnw/fnw code ."
+alias fnw-code="fnw && code ."
 alias bomb="nx serve buildomatic"
 alias cole="cd ~/source/personal/coleman"
 alias coler="cd ~/source/personal/coleman/rust/coleman"
+alias sms="cd ~/source/personal/scrum-master-studio"
+alias sms-code="sms && code ."
 
 ### Open Source ###
 alias salam="cd ~/source/work/agile-master"
