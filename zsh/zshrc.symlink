@@ -23,7 +23,6 @@ plugins=(
 	git 
 	gitfast
 	npm
-	npx
 	ripgrep
 	rust
 	# ssh-agent
