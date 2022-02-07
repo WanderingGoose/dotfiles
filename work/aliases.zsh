@@ -4,7 +4,7 @@ if [ -d "$PROJECTS/work/salucro.react" ]; then
 
   ## PPv4 ##
   alias ppv4="cd ~/source/work/patient-portal-reactor/source"
-  alias pp4code="cd ~/source/work/patient-portal-reactor/source && code ."
+  alias pp4code="ppv4 && code ."
 
   ## Salucro React Monorepo ##
   alias smono="cd ~/source/work/salucro-react/salucro"

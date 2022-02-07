@@ -18,7 +18,6 @@ fi
 plugins=(
 	alias-finder
   # brew
-	rust
 	common-aliases
 	copydir
 	git 
@@ -26,6 +25,7 @@ plugins=(
 	npm
 	npx
 	ripgrep
+	rust
 	# ssh-agent
 	# stencil
 	vscode
