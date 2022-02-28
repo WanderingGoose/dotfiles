@@ -19,7 +19,7 @@ plugins=(
 	alias-finder
   # brew
 	common-aliases
-	copydir
+	copypath
 	git 
 	gitfast
 	npm
