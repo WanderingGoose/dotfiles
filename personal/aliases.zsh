@@ -11,6 +11,9 @@ alias coler="cd ~/source/personal/coleman/rust/coleman"
 alias sms="cd ~/source/personal/scrum-master-studio"
 alias smss="sms && cd ./sms"
 alias sms-code="smss && code ."
+alias karibu="cd ~/source/personal/karibu"
+alias karibus="cd ~/source/personal/karibu/karibu"
+alias karibu-code="karibus && code ."
 
 ### Open Source ###
 alias salam="cd ~/source/work/agile-master"
