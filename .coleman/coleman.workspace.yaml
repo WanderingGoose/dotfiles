@@ -3,6 +3,41 @@ version: 1.0
 owners:
   - Alec Whittington <alec@coleman.rs>
 project_groups:
+  - name: Personal
+    projects:
+      - name: Karibu
+        display_name: Karibu
+        repo_address: 'git@github.com:fatninjaswork/karibu.git'
+        branch: develop
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
+        env:
+          enabled: true
+          example_env_filename: '.env.example'
+          env_name: '.env.development.local'
+          env_root_dir: ''
+      - name: Fat Ninjas Work
+        display_name: FNW
+        repo_address: 'git@github.com:fatninjaswork/fnw.git'
+        branch: develop
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
+        env:
+          enabled: true
+          example_env_filename: '.env.example'
+          env_name: '.env.development.local'
+          env_root_dir: ''
+      - name: Dot Files and Config
+        display_name: DFAC
+        repo_address: 'git@github.com:alecwhittington/dot-files-and-config.git'
+        branch: develop
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
+        env:
+          enabled: false
+          example_env_filename: ''
+          env_name: ''
+          env_root_dir: ''
   - name: 3rd Party
     projects:
       - name: Coleman
@@ -59,12 +94,12 @@ project_groups:
           env_root_dir: ''
   - name: Work
     projects:
-      - name: Agile Master
-        display_name: agile master
-        repo_address: 'git@bitbucket.org:salucro/agile-master.git'
+      - name: Coleman
+        display_name: coleman
+        repo_address: 'git@github.com:alecwhittington/coleman.git'
         branch: develop
-        git_email: awhittington@salucro.com
-        git_name: Alec Whittington
+        git_email: alec.whittington@gmail.com
+        git_name: Alec W.
         env:
           enabled: true
           example_env_filename: '.env.example'
