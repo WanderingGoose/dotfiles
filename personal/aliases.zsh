@@ -2,6 +2,11 @@
 alias df="cd ~/source/personal/dotfiles"
 alias df-code="df && code ."
 
+### Docker
+alias dcd="docker-compose down"
+alias dcps="docker-compose ps"
+alias dprune="docker system prune --all --force --volumes"
+
 ### Fat Ninja's Work ###
 alias fnw="cd ~/source/personal/fnw/fnw"
 alias fnw-code="fnw && code ."
