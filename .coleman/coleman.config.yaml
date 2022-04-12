@@ -1,13 +1,13 @@
 ---
 allow_overwrite: true
-root_source_code_dir: /Users/awhittington.phx/dev
-default_git_email: awhittington@salucro.com
-default_git_name: Alec W.
+root_source_code_dir: /Users/E72719/source
+default_git_email: awhittington@carvana.com
+default_git_name: Alec Whittington
 environment: MacOS
 is_wsl: false
 overwrite_workspace: false
 dotfiles:
   has_dotfiles: true
-  dotfiles_repo: 'git@bitbucket.org:alec-whittington/dotfiles.git'
+  dotfiles_repo: 'git@github.com:alecwhittington/dotfiles.git'
   bootstrapper_script: 'bootstrap'
   install_script: 'install'
