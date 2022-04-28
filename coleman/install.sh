@@ -10,6 +10,13 @@ echo "  🧞‍♂️ Checking for Coleman 🧞‍♂️"
 if test ! $(which coleman); then
   echo "    Installing 🧞‍♂️ Coleman for you."
 
+  if [ -d "$HOME/.coleman" ]; then
+    echo "        Coleman config directory already exists"
+  else
+    echo "        Coleman config directory created"
+    mkdir ~/.coleman
+  fi
+
   if [ -d "$HOME/.coleman/coleman.config.yaml" ]; then
     echo "Coleman Config installed already"
   else
