@@ -1,13 +1,13 @@
 ---
 allow_overwrite: true
-root_source_code_dir: /Users/E72719/source
-default_git_email: awhittington@carvana.com
-default_git_name: Alec Whittington
-environment: MacOS
-is_wsl: false
+root_source_code_dir: /Home/headninja/source
+default_git_email: alec@fatninjas.work
+default_git_name: Head Ninja
+environment: linux
+is_wsl: true
 overwrite_workspace: false
 dotfiles:
   has_dotfiles: true
-  dotfiles_repo: 'git@github.com:alecwhittington/dotfiles.git'
+  dotfiles_repo: 'git@github.com:wanderinggoose/dotfiles.git'
   bootstrapper_script: 'bootstrap'
   install_script: 'install'

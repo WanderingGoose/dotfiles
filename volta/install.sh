@@ -19,18 +19,6 @@ install_yarn() {
     volta install yarn@1
 }
 
-yarn_global_add() {
-    echo "      -----------------------------------------------------------"
-    echo "       Yarn Global Add these packages:                          "
-    echo "      -----------------------------------------------------------"
-    echo ""
-    echo "        Installing NX"
-    yarn global add nx@latest
-    echo "        NX installed successfully"
-    echo ""
-    echo "      Yarn Global Add completed successfully"
-}
-
 echo "==========================================================="
 echo "              Setting up NodeJS Environment"
 echo "==========================================================="
@@ -42,7 +30,6 @@ if test ! $(which volta); then
     install_volta
     install_node
     install_yarn
-    yarn_global_add
 
     echo "    🌩️  Volta, Node, and Yarn installed"
 else

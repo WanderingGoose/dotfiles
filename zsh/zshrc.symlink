@@ -17,7 +17,7 @@ fi
 
 plugins=(
 	alias-finder
-  # brew
+  brew
 	common-aliases
 	copypath
 	git 
@@ -25,13 +25,14 @@ plugins=(
 	npm
 	ripgrep
 	rust
-	# ssh-agent
+	ssh-agent
 	# stencil
 	vscode
 	yarn
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	)
+	zstyle :omz:plugins:ssh-agent identities id_ed25519
 
 source $ZSH/oh-my-zsh.sh
 
