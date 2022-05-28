@@ -1,6 +1,6 @@
 ---
 allow_overwrite: true
-root_source_code_dir: /Home/headninja/source
+root_source_code_dir: ~/source
 default_git_email: alec@fatninjas.work
 default_git_name: Head Ninja
 environment: linux
