@@ -7,8 +7,8 @@ scan_timeout = "60"
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]      # The name of the module we are configuring is "character"
-success_symbol = "[➜](bold green)"     # The "symbol" segment is being set to "➜"
-error_symbol = "[✗](bold red)"
+success_symbol = "[➜](bold green) "     # The "symbol" segment is being set to "➜"
+error_symbol = "[✗](bold red) "
 
 # Disable the package module, hiding it from the prompt completely
 [package]
@@ -22,26 +22,8 @@ truncate_to_repo = true
 truncation_length = 16
 truncation_symbol = ""
 
-[git_status]
-# conflicted = "🔴 "
-# ahead = "🏎💨 "
-# behind = "😰 "
-# diverged = "😵 "
-# untracked = "🤷‍ "
-# stashed = "📦 "
-# modified = "✏️ "
-# staged = '[++$count](bold green)'
-# renamed = "👅 "
-# deleted = "🗑 "
-
 [memory_usage]
 threshold = -1
 symbol = "🐏 "
 style = "bold dimmed green"
 disabled = false
-
-[nodejs]
-symbol = "✨ "
-
-[rust]
-symbol = "⚙️ "
