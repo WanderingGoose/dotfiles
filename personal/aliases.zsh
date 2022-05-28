@@ -19,8 +19,8 @@ alias sms-code="smss && code ."
 alias karibu="cd ~/source/personal/karibu"
 alias karibus="cd ~/source/personal/karibu/karibu"
 alias karibu-code="karibus && code ."
-alias dds="cd ~/source/3rd\ Party/duck-duck-scrum"
-alias ddss="dds && cd /dds"
+alias dds="cd ~/source/personal/duck-duck-scrum"
+alias ddss="dds && cd ./dds"
 alias ddsc="ddss && vsc"
 
 ### Open Source ###

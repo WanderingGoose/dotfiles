@@ -1,34 +1,38 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
 # Don't print a new line at the start of the prompt
-add_newline = false
+add_newline = true
+scan_timeout = "60"
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]      # The name of the module we are configuring is "character"
-success_symbol = "➜"     # The "symbol" segment is being set to "➜"
-error_symbol = "✗"
+success_symbol = "[➜](bold green)"     # The "symbol" segment is being set to "➜"
+error_symbol = "[✗](bold red)"
 
 # Disable the package module, hiding it from the prompt completely
 [package]
-disabled = true
+disabled = false
 
 [directory]
 truncation_length = 3
+truncate_to_repo = true
 
 [git_branch]
-symbol = "🌱 "
 truncation_length = 16
 truncation_symbol = ""
 
 [git_status]
-conflicted = "🔴 "
-ahead = "🏎💨 "
-behind = "😰 "
-diverged = "😵 "
-untracked = "🤷‍ "
-stashed = "📦 "
-modified = "✏️ "
-staged = '[++\($count\)](green)'
-renamed = "👅 "
-deleted = "🗑 "
+# conflicted = "🔴 "
+# ahead = "🏎💨 "
+# behind = "😰 "
+# diverged = "😵 "
+# untracked = "🤷‍ "
+# stashed = "📦 "
+# modified = "✏️ "
+# staged = '[++$count](bold green)'
+# renamed = "👅 "
+# deleted = "🗑 "
 
 [memory_usage]
 threshold = -1
