@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [ -d "$HOME/.oh-my-zsh" ]; then
+  echo "oh-my-zsh is already installed"
+else
+  echo "Installing oh-my-zsh"
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  echo "oh-my-zsh installed"
+fi
+
 cd $HOME/.oh-my-zsh/custom/plugins
 
 if [ -d "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
