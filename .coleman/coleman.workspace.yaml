@@ -3,19 +3,8 @@ version: 1.0
 owners:
   - Alec Whittington <alec@fatninjas.work>
 project_groups:
-  - name: Personal
+  - name: personal
     projects:
-      - name: Karibu
-        display_name: Karibu
-        repo_address: 'git@github.com:fatninjaswork/karibu.git'
-        branch: develop
-        git_email: alec.whittington@gmail.com
-        git_name: Alec W.
-        env:
-          enabled: true
-          example_env_filename: '.env.example'
-          env_name: '.env.development.local'
-          env_root_dir: ''
       - name: Fat Ninjas Work
         display_name: FNW
         repo_address: 'git@github.com:fatninjaswork/fnw.git'
@@ -27,19 +16,6 @@ project_groups:
           example_env_filename: '.env.example'
           env_name: '.env.development.local'
           env_root_dir: ''
-      - name: Dot Files and Config
-        display_name: DFAC
-        repo_address: 'git@github.com:alecwhittington/dot-files-and-config.git'
-        branch: develop
-        git_email: alec.whittington@gmail.com
-        git_name: Alec W.
-        env:
-          enabled: false
-          example_env_filename: ''
-          env_name: ''
-          env_root_dir: ''
-  - name: 3rd Party
-    projects:
       - name: Coleman
         display_name: coleman
         repo_address: 'git@github.com:alecwhittington/coleman.git'
@@ -59,6 +35,8 @@ project_groups:
               value: 'my other var'
               type: string
               generated: true
+  - name: 3rd-party
+    projects:
       - name: Rust by Example
         display_name: rust by example
         repo_address: 'https://github.com/rust-lang/rust-by-example'

@@ -8,10 +8,12 @@ install_volta() {
 
 install_node() {
     echo "      -----------------------------------------------------------"
-    echo "      Installing Node 12 and 14"
+    echo "      Installing Node 12, 14, 16, and 18"
     echo "      -----------------------------------------------------------"
     volta install node@12
     volta install node@14
+    volta install node@16
+    volta install node@18
 }
 
 install_yarn() {

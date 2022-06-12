@@ -10,6 +10,15 @@ echo "  🧞‍♂️ Checking for Coleman 🧞‍♂️"
 if test ! $(which coleman); then
   echo "    Installing 🧞‍♂️ Coleman for you."
 
+  if [ -d "$HOME/source/personal/coleman" ]; then
+    echo "        Coleman source directory already exists"
+  else
+    echo "           creating Coleman source directory"
+    cd "$HOME/source/personal"
+    git@github.com:alecwhittington/coleman.git
+    echo "        Coleman source directory created"
+  fi
+
   if [ -d "$HOME/.coleman" ]; then
     echo "        Coleman config directory already exists"
   else

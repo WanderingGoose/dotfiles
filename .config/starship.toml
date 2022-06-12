@@ -7,6 +7,7 @@ scan_timeout = "60"
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]      # The name of the module we are configuring is "character"
+symbol="[➜](bold green) "
 success_symbol = "[➜](bold green) "     # The "symbol" segment is being set to "➜"
 error_symbol = "[✗](bold red) "
 
