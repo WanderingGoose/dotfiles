@@ -17,7 +17,7 @@ alias dds="cd ~/source/duck-duck-scrum"
 alias ddss="dds && cd ./dds"
 alias ddsc="ddss && vsc"
 alias fw="cd ~/source/fonzie-works/fw"
-alias fw=c"fw && code ."
+alias fwc="fw && code ."
 
 ### Open Source ###
 alias sms="cd ~/source/3rd-party/scrum-master-studio"
