@@ -18,7 +18,7 @@ fi
 
 plugins=(
 	alias-finder
-  	brew
+  brew
 	common-aliases
 	copypath
 	git 
@@ -32,7 +32,7 @@ plugins=(
 	yarn
 	zsh-syntax-highlighting
 	zsh-autosuggestions
-	)
+)
 
 zstyle :omz:plugins:ssh-agent identities id_ed25519
 
