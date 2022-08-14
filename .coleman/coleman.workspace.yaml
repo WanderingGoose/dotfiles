@@ -5,80 +5,82 @@ owners:
 project_groups:
   - name: personal
     projects:
-      - name: Fat Ninjas Work
-        display_name: FNW
-        repo_address: 'git@github.com:fatninjaswork/fnw.git'
-        branch: develop
-        git_email: alec.whittington@gmail.com
-        git_name: Alec W.
-        env:
-          enabled: true
-          example_env_filename: '.env.example'
-          env_name: '.env.development.local'
-          env_root_dir: ''
-      - name: Coleman
-        display_name: coleman
-        repo_address: 'git@github.com:alecwhittington/coleman.git'
-        branch: develop
-        git_email: alec.whittington@gmail.com
-        git_name: Alec W.
-        environment:
-          env_example_file: env-example
-          env_file_name: '.env.development.local'
-          overwrite_existing: false
-          replace:
-            - name: MY_VAR
-              value: 12345
-              type: numeric
-              generated: true
-            - name: MY_OTHER_VAR
-              value: 'my other var'
-              type: string
-              generated: true
+
   - name: 3rd-party
     projects:
-      - name: Rust by Example
-        display_name: rust by example
-        repo_address: 'https://github.com/rust-lang/rust-by-example'
-        branch: master
-        git_email: alec.whittington@gmail.com
-        git_name: Alec W.
-        env:
-          enabled: false
-          example_env_filename: ''
-          env_name: ''
-          env_root_dir: ''
-      - name: gitui
-        display_name: gitui
-        repo_address: 'https://github.com/extrawurst/gitui.git'
-        branch: master
-        git_email: alec.whittington@gmail.com
-        git_name: Alec W.
-        env:
-          enabled: false
-          example_env_filename: ''
-          env_name: ''
-          env_root_dir: ''
-      - name: Scrum Master Studio
-        display_name: scrum master studio
-        repo_address: 'git@github.com:fatninjaswork/scrum-master-studio.git'
-        branch: master
-        git_email: alec.whittington@gmail.com
-        git_name: Alec W.
-        env:
-          enabled: false
-          example_env_filename: ''
-          env_name: ''
-          env_root_dir: ''
-      - name: Duck Duck Scrum
-        display_name: duck duck scrum
-        repo_address: 'git@github.com:fatninjaswork/duck-duck-scrum.git'
-        branch: master
-        git_email: alec@fatninjas.work
-        git_name: Head Ninja
-        env:
-          enabled: false
-          example_env_filename: ''
-          env_name: ''
-          env_root_dir: ''
-projects: ~
+
+projects:
+  - name: Fat Ninjas Work
+    display_name: FNW
+    repo_address: 'git@github.com:fatninjaswork/fnw.git'
+    branch: develop
+    git_email: alec.whittington@gmail.com
+    git_name: Alec W.
+    env:
+      enabled: true
+      example_env_filename: '.env.example'
+      env_name: '.env.development.local'
+      env_root_dir: ''
+  - name: Coleman
+    display_name: coleman
+    repo_address: 'git@github.com:alecwhittington/coleman.git'
+    branch: develop
+    git_email: alec.whittington@gmail.com
+    git_name: Alec W.
+    environment:
+      env_example_file: env-example
+      env_file_name: '.env.development.local'
+      overwrite_existing: false
+      replace:
+        - name: MY_VAR
+          value: 12345
+          type: numeric
+          generated: true
+        - name: MY_OTHER_VAR
+          value: 'my other var'
+          type: string
+          generated: true
+  - name: Rust by Example
+    display_name: rust by example
+    repo_address: 'https://github.com/rust-lang/rust-by-example'
+    branch: master
+    git_email: alec.whittington@gmail.com
+    git_name: Alec W.
+    env:
+      enabled: false
+      example_env_filename: ''
+      env_name: ''
+      env_root_dir: ''
+  - name: gitui
+    display_name: gitui
+    repo_address: 'https://github.com/extrawurst/gitui.git'
+    branch: master
+    git_email: alec.whittington@gmail.com
+    git_name: Alec W.
+    env:
+      enabled: false
+      example_env_filename: ''
+      env_name: ''
+      env_root_dir: ''
+  - name: Scrum Master Studio
+    display_name: scrum master studio
+    repo_address: 'git@github.com:fatninjaswork/scrum-master-studio.git'
+    branch: master
+    git_email: alec.whittington@gmail.com
+    git_name: Alec W.
+    env:
+      enabled: false
+      example_env_filename: ''
+      env_name: ''
+      env_root_dir: ''
+  - name: Duck Duck Scrum
+    display_name: duck duck scrum
+    repo_address: 'git@github.com:fatninjaswork/duck-duck-scrum.git'
+    branch: master
+    git_email: alec@fatninjas.work
+    git_name: Head Ninja
+    env:
+      enabled: false
+      example_env_filename: ''
+      env_name: ''
+      env_root_dir: ''
