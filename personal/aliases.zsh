@@ -9,7 +9,7 @@ alias dprune="docker system prune --all --force --volumes"
 alias dcfnw="docker compose up --build -d"
 
 ### Fat Ninja's Work ###
-alias fnw="cd ~/source/fnw"
+alias fnw="cd ~/source/fnw/Frontend"
 alias fnwcode="fnw && code ."
 alias cole="cd ~/source/personal/coleman"
 alias coler="cd ~/source/coleman/rust/coleman"
