@@ -10,6 +10,13 @@ alias dprune="docker system prune --all --force --volumes"
 alias dcfnw="docker compose up --build -d"
 alias dcfnwdown="docker compose down"
 
+### Wandering Goose ###
+alias sl="cd ~/source/shooters-log"
+alias slb="sl && cd ./backend"
+alias slf="sl && cd ./frontend"
+alias slfc="slf && code ."
+alias fio="cd ~/source/fonzie-io"
+
 ### Fat Ninja's Work ###
 alias fnw="cd ~/source/fnw/Frontend"
 alias fnwcode="fnw && code ."
