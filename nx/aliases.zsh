@@ -1,5 +1,5 @@
 ## NX ##
-alias baa="npx nx run-many --target=build --all"
+alias nxbaa="npx nx run-many --target=build --all"
 alias nxb="npx nx build"
 alias nxba="npx nx affected --target=build --parallel=true --maxParallel=8 --all=true --skip-nx-cache=true"
 alias nxta="npx nx affected --target=test --parallel=true --maxParallel=8 --all=true --skip-nx-cache=true"

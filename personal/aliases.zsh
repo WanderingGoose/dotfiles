@@ -1,6 +1,7 @@
 ### Personal ###
 alias dotf="cd ~/.dotfiles"
 alias dotfcode="df && code ."
+alias dotfg="df && git pull origin"
 
 ### Docker
 alias dcd="docker-compose down"

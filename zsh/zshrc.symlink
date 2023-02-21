@@ -57,7 +57,7 @@ done
 
 unset config_files
 
-
+# Starship
 eval "$(starship init zsh)"
 
 export VOLTA_HOME="$HOME/.volta"
