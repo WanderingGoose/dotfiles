@@ -1,7 +1,6 @@
 ### Personal ###
-alias df="cd ~/.dotfiles"
-alias dfcode="df && code ."
-alias dfpull="df && git pull"
+alias dotf="cd ~/.dotfiles"
+alias dotfcode="df && code ."
 
 ### Docker
 alias dcd="docker-compose down"
@@ -29,3 +28,9 @@ alias fnw="cd ~/source/fnw/Frontend"
 alias fnwcode="fnw && code ."
 alias cole="cd ~/source/personal/coleman"
 alias coler="cd ~/source/coleman/rust/coleman"
+alias dds="cd ~/source/duck-duck-scrum"
+alias ddsf="dds && cd ./frontend"
+alias ddsb="dds && cd ./backend"
+alias ddsf="ddss && vsc"
+alias fw="cd ~/source/fonzie-works/fw"
+alias fwc="fw && code ."
