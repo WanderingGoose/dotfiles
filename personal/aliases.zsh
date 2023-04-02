@@ -21,7 +21,7 @@ alias nks="cd ~/source/ninja-kanban-studio"
 alias dds="cd ~/source/duck-duck-scrum"
 alias ddss="dds && cd ./dds"
 alias ddsc="ddss && vsc"
-alias dftm-"cd ~/source/dontforgetthemilk.shop"
+alias dftm="cd ~/source/dontforgetthemilk.shop"
 
 ### Fat Ninja's Work ###
 alias fnw="cd ~/source/fnw/Frontend"
