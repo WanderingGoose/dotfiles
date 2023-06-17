@@ -18,16 +18,16 @@ fi
 
 plugins=(
 	alias-finder
-  brew
+  	brew
 	common-aliases
 	copypath
+	dotnet
 	git 
 	gitfast
 	npm
 	ripgrep
 	rust
 	ssh-agent
-	# stencil
 	vscode
 	yarn
 	zsh-syntax-highlighting

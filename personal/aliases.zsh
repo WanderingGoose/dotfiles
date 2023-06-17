@@ -25,7 +25,7 @@ alias ddsc="ddss && vsc"
 alias dftm="cd ~/source/dontforgetthemilk.shop"
 
 ### Fat Ninja's Work ###
-alias fnw="cd ~/source/fnw/Frontend"
+alias fnw="cd ~/source/fnw"
 alias fnwcode="fnw && code ."
 alias cole="cd ~/source/personal/coleman"
 alias coler="cd ~/source/coleman/rust/coleman"
