@@ -1,3 +1,5 @@
 alias @la="cd ~/source/lion-arms"
-alias @la:build="@la && pnpm @la:build"
-alias @la:serve="@la && pnpm @la:serve"
+alias @la:affected="@la && @la:build && @la:test"
+alias @la:build="@la && pnpm affected:build"
+alias @la:test="@la && pnpm affected:test"
+alias @la:serve="@la && pnpm serve"
