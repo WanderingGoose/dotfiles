@@ -1,5 +1,10 @@
-alias @la="cd ~/source/lion-arms"
-alias @la:affected="@la && @la:build && @la:test"
-alias @la:build="@la && pnpm affected:build"
-alias @la:test="@la && pnpm affected:test"
-alias @la:serve="@la && pnpm serve"
+## Frame Draggers Unionworks
+alias @fdu="cd ~/source/frame-draggers-union"
+alias @fdu:affected="@fdu && @fdu:build && @fdu:test"
+alias @fdu:build="@fdu && pnpm build"
+alias @fdu:test="@fdu && pnpm test"
+alias @fdu:serve="@fdu && pnpm serve"
+
+## Panda
+alias @panda="cd ~/source/panda"
+alias @panda:affected="@panda && pnpm build && pnpm test"
