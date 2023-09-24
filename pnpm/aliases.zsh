@@ -6,7 +6,9 @@ alias pup="pnpm update"
 
 ## Project Operations
 alias @pb="pnpm build"
+alias @pba="pnpm build:all"
 alias @pbsc="pnpm build:no-cache"
+alias @plint="pnpm lint"
 alias @ps="pnpm start"
 alias @psv="pnpm serve"
 alias @pt="pnpm test"
