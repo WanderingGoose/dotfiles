@@ -3,13 +3,6 @@ alias dotf="cd ~/.dotfiles"
 alias dotfcode="df && code ."
 alias dotfg="df && git pull origin"
 
-### Docker
-alias dcd="docker compose down"
-alias dcps="docker compose ps"
-alias dprune="docker system prune --all --force --volumes"
-alias dcfnw="docker compose up --build -d"
-alias dcfnwdown="docker compose down"
-
 ### Wandering Goose ###
 alias sl="cd ~/source/shooters-log"
 alias slb="sl && cd ./backend"
@@ -23,6 +16,7 @@ alias dds="cd ~/source/duck-duck-scrum"
 alias ddss="dds && cd ./dds"
 alias ddsc="ddss && vsc"
 alias dftm="cd ~/source/dontforgetthemilk.shop"
+alias @fdsc="~/source/frame-dragger-social-club"
 
 ### Fat Ninja's Work ###
 alias fnw="cd ~/source/fnw"
