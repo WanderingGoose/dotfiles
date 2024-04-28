@@ -7,6 +7,7 @@ DISABLE_MAGIC_FUNCTIONS=true
 COMPLETION_WAITING_DOTS="true"
 ZSH_ALIAS_FINDER_AUTOMATIC="true"
 DOTNET_CLI_TELEMETRY_OPTOUT=1
+SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -38,7 +39,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-if [[ "$(whoami)" = 'head-ninja' ]]; then
+if [[ "$(whoami)" = 'headninja' ]]; then
   export PYENV_ROOT="$HOME/.pyenv"
   command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init -)"
@@ -63,9 +64,6 @@ done
 
 unset config_files
 
-# Starship
-eval "$(starship init zsh)"
-
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
@@ -80,3 +78,6 @@ esac
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+
+# Starship
+eval "$(starship init zsh)"
