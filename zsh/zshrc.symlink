@@ -76,6 +76,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+#dotnet
+PATH="$PATH:/Users/headninja/.dotnet/tools"
+
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
