@@ -10,5 +10,5 @@ alias vpn22="volta pin node@22"
 alias viy1="volta install yarn@1"
 alias vpy1="volta pin yarn@1"
 
-# PNPM
+#pnpm
 alias vip="volta install pnpm"
