@@ -9,6 +9,9 @@ ZSH_ALIAS_FINDER_AUTOMATIC="true"
 DOTNET_CLI_TELEMETRY_OPTOUT=1
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 
+# Set JAVA_HOME environment variable
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home
+
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -83,3 +86,12 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Starship
 eval "$(starship init zsh)"
+
+# Set JAVA_HOME environment variable
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/microsoft-21.jdk/Contents/Home
+alias claude="/Users/headninja/.claude/local/claude"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/headninja/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
