@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\n🏴‍☠️ feat: Added CLAUDE.md to guide future AI crew through these waters\n\nCreated comprehensive documentation for AI assistants working with this dotfiles repository.\nIncludes setup commands, architecture overview, and the secret map to all the configuration treasures!\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
