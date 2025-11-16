@@ -33,7 +33,9 @@ open https://roscoe.dsas.local
 ## Files
 
 ### Templates
+
 - **Caddyfile.template** - Caddy configuration with Dotman variables
+
   - Generates machine-specific Caddyfile in workspace
   - Supports both HTTP and HTTPS
   - Uses `{{SOURCE_ROOT}}`, `{{HOME}}`, `{{HOSTNAME}}`
@@ -43,7 +45,9 @@ open https://roscoe.dsas.local
   - Sourced by ZSH on startup
 
 ### Scripts
+
 - **setup.sh** - Complete HTTPS setup
+
   - Installs mkcert
   - Creates CA
   - Generates wildcard certificates
@@ -54,6 +58,7 @@ open https://roscoe.dsas.local
   - Installs to system trust store
 
 ### Certificates
+
 - **certs/rootCA.pem** - Public CA certificate (SAFE to commit)
 - **certs/.gitignore** - Blocks private keys from being committed
 - **certs/README-SECURITY.md** - Security guidelines
@@ -63,6 +68,7 @@ open https://roscoe.dsas.local
 ### Certificate Chain
 
 1. **CA Certificate** (`rootCA.pem`)
+
    - Created once on primary machine
    - Shared across all machines via dotfiles
    - Both machines trust this CA
@@ -74,13 +80,13 @@ open https://roscoe.dsas.local
 
 ### File Locations
 
-| File | Location | Committed? |
-|------|----------|------------|
-| Public CA Cert | `~/.dotfiles/caddy/certs/rootCA.pem` | ✅ YES |
-| Private CA Key | `$(mkcert -CAROOT)/rootCA-key.pem` | ❌ NO |
-| Site Certificate | `~/.caddy/certs/_wildcard.dsas.local+4.pem` | ❌ NO |
-| Site Private Key | `~/.caddy/certs/_wildcard.dsas.local+4-key.pem` | ❌ NO |
-| Caddyfile | `{{SOURCE_ROOT}}/dsas-workspace/Caddyfile` | ❌ NO (generated) |
+| File             | Location                                        | Committed?        |
+| ---------------- | ----------------------------------------------- | ----------------- |
+| Public CA Cert   | `~/.dotfiles/caddy/certs/rootCA.pem`            | ✅ YES            |
+| Private CA Key   | `$(mkcert -CAROOT)/rootCA-key.pem`              | ❌ NO             |
+| Site Certificate | `~/.caddy/certs/_wildcard.dsas.local+4.pem`     | ❌ NO             |
+| Site Private Key | `~/.caddy/certs/_wildcard.dsas.local+4-key.pem` | ❌ NO             |
+| Caddyfile        | `{{SOURCE_ROOT}}/dsas-workspace/Caddyfile`      | ❌ NO (generated) |
 
 ## Domains
 
@@ -148,6 +154,7 @@ pnpm caddy:reload
 See [certs/README-SECURITY.md](./certs/README-SECURITY.md) for detailed security guidelines.
 
 **Key Points:**
+
 - ✅ Public CA cert (`rootCA.pem`) is safe to commit
 - ❌ Private keys must NEVER be committed
 - ❌ Site certificates should be generated locally on each machine

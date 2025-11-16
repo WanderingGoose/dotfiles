@@ -16,11 +16,13 @@ The 1Password SSH agent stores and manages SSH keys securely. Keys are unlocked 
 ### Configuration
 
 **Automatic Setup:**
+
 - The `~/.dotfiles/zsh/1password.zsh` file sets `SSH_AUTH_SOCK` automatically
 - The `~/.ssh/config` file directs SSH to use 1Password's agent
 - Works identically on Big-Mac and Little-Mac
 
 **Manual Verification:**
+
 ```bash
 # Check SSH_AUTH_SOCK points to 1Password
 echo $SSH_AUTH_SOCK
@@ -59,11 +61,13 @@ eval $(op signin)
 ### Secret Reference Format
 
 Secrets are referenced using the format:
+
 ```
 op://[Vault]/[Item]/[Field]
 ```
 
 **Examples:**
+
 - `op://Private/OpenAI/api_key`
 - `op://Work/GitHub/personal_access_token`
 - `op://Private/Vercel/blob_token`
@@ -71,6 +75,7 @@ op://[Vault]/[Item]/[Field]
 ### Using Secrets in Code
 
 **Node.js/TypeScript:**
+
 ```typescript
 import { exec } from 'child_process';
 import { promisify } from 'util';
@@ -87,6 +92,7 @@ const apiKey = await getSecret('op://Private/OpenAI/api_key');
 ```
 
 **Shell Scripts:**
+
 ```bash
 # Read a secret
 API_KEY=$(op read "op://Private/OpenAI/api_key")
@@ -96,6 +102,7 @@ echo "OPENAI_API_KEY=$(op read 'op://Private/OpenAI/api_key')" > .env
 ```
 
 **Python:**
+
 ```python
 import subprocess
 
@@ -136,6 +143,7 @@ op item create --category "API Credential" \
 ### Best Practices
 
 **DO:**
+
 - ✅ Store ALL secrets in 1Password (API keys, tokens, passwords)
 - ✅ Use Secure Notes for complex configurations
 - ✅ Reference secrets via `op read` instead of environment variables
@@ -143,6 +151,7 @@ op item create --category "API Credential" \
 - ✅ Use descriptive item names and fields
 
 **DON'T:**
+
 - ❌ Commit secrets to Git (even in .env files)
 - ❌ Share secrets via Slack, email, or other channels
 - ❌ Hardcode secrets in code
@@ -173,18 +182,20 @@ Vault: Private
 ```
 
 **Access in DSAS HQ:**
+
 ```typescript
 // In setup or config file
 const secrets = {
   neonDbUrl: await getSecret('op://Private/DSAS - HQ/neon_db_url'),
   stripeKey: await getSecret('op://Private/DSAS - HQ/stripe_secret_key'),
-  resendKey: await getSecret('op://Private/DSAS - HQ/resend_api_key'),
+  resendKey: await getSecret('op://Private/DSAS - HQ/resend_api_key')
 };
 ```
 
 ### Troubleshooting
 
 **SSH agent not working:**
+
 ```bash
 # Restart 1Password application
 # Check that SSH agent is enabled in 1Password settings:
@@ -195,6 +206,7 @@ ls -la ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
 ```
 
 **CLI authentication errors:**
+
 ```bash
 # Re-authenticate
 op signin
@@ -204,6 +216,7 @@ op whoami
 ```
 
 **Biometric prompt not appearing:**
+
 - Ensure 1Password is running
 - Check System Settings → Touch ID & Password
 - Restart 1Password
@@ -211,15 +224,18 @@ op whoami
 ## Cross-Machine Synchronization
 
 **What Syncs:**
+
 - ✅ SSH keys (stored in 1Password vault)
 - ✅ Secrets and Secure Notes
 - ✅ 1Password items and vaults
 
 **What Doesn't Sync:**
+
 - ❌ CLI authentication state (sign in on each machine)
 - ❌ `SSH_AUTH_SOCK` (set by dotfiles on each machine)
 
 **Setup on New Machine:**
+
 1. Install 1Password app
 2. Enable SSH agent in settings
 3. Install 1Password CLI: `brew install --cask 1password-cli`
