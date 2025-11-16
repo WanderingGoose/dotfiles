@@ -1,0 +1,9 @@
+# Security: NEVER commit private keys or site certificates
+# Only the public CA certificate (rootCA.pem) should be committed
+
+# Block all PEM files by default
+*.pem
+*-key.pem
+
+# Exception: Allow the public CA certificate (SAFE to commit)
+!rootCA.pem
