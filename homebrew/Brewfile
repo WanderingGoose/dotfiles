@@ -1,0 +1,40 @@
+# 🏴‍☠️ Captain Goose's Homebrew Bundle
+# Packages installed across all ships (Big-Mac & Little-Mac)
+#
+# Install/Update: brew bundle --file ~/.dotfiles/homebrew/Brewfile
+# Check: brew bundle check --file ~/.dotfiles/homebrew/Brewfile
+
+# Taps
+tap "homebrew/bundle"
+tap "homebrew/services"
+
+# Development Tools
+brew "git"
+brew "gh"              # GitHub CLI
+brew "caddy"           # Web server with automatic HTTPS
+brew "mkcert"          # Local HTTPS certificates
+brew "node"            # Managed by Volta, but needed for some tools
+brew "pnpm"            # Package manager
+brew "python@3.12"     # Managed by pyenv
+brew "dotnet"          # .NET SDK for Dotman
+
+# Security & Secrets
+cask "1password-cli"   # Access secrets from Secure Notes in code
+
+# Database Tools
+brew "postgresql@16"   # PostgreSQL client
+
+# System Utilities
+brew "tree"            # Directory visualization
+brew "wget"            # Download utility
+brew "jq"              # JSON processor
+brew "ripgrep"         # Fast search (used by grep tools)
+
+# Image Processing (for DSAS image workflows)
+brew "imagemagick"
+brew "libheif"         # HEIC support
+brew "webp"            # WebP support
+
+# Optional: Uncomment if needed
+# brew "redis"         # Cache server
+# brew "nginx"         # Alternative web server
